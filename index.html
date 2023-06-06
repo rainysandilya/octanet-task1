@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap 2</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="css1.css">
+</head>
+<body>
+    <div class="navbar navbar-expand-sm bg-dark mb-5">
+        <div class="container-fluid ">
+            <a href="#" class="navbar-brand">
+                <img src="data:image/png;base64,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" width="80px" alt="unavailable">
+            </a>
+               <button data-bs-target="#menu" data-bs-toggle="collapse" class="navbar-toggler">
+                 <span class="navbar-toggler-icon"></span>
+               </button>
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class=" nav-pills navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <button class="btn one text-white" data-bs-target="#content" data-bs-toggle="modal">Log in</button>
+     <div class="modal fade" id="content">
+          <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">Log in<button class="btn-close" data-bs-dismiss="modal"></button> 
+                   </div> 
+                    <div class="modal-body">
+                         <div class="container">
+                            <h1 class="display-5 text-info text-center">Login</h1>
+                            <form class="w-30 mx-auto">
+                                <div>
+                                    <label for="username" class="form-label">Username</label>
+                                    <input type="text" name="username" id="username" class="form-control">
+                                </div>
+                                <div>
+                                    <label for="password" class="form-label">Password</label>
+                                    <input type="password" name="password" id="password" class="form-control">
+                                </div>
+                            </form>
+                         </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-info">Proceed</button>
+                    </div>
+                </div>
+            </div>
+     </div>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link  text-white">Sign up</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link  text-white">Udemy business</a>
+                    <li class="nav-item">
+                        <div class="dropdown">
+                            <button class="btn text-white dropdown-toggle" data-bs-toggle="dropdown">Categories</button>
+                            <ul class="dropdown-menu dropdown-menu-dark">
+                                <li><h2 class="dropdown-header">Development</h2></li>
+                                <li><h2 class="dropdown-header">Business</h2></li>
+                                <li><h2 class="dropdown-header">Life style</h2></li>
+                                <li><h2 class="dropdown-header">Marketing</h2></li>
+                                <li><h2 class="dropdown-header">Design</h2></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+     </div> 
+        <div class="card bg-dark text-white">
+            <div class="card-body p-0">
+                 <div class="row">
+                    <div class="col-sm-8">
+                        <div class="p-3">
+                            <h3 class="text-info">A broad selection of courses</h3>
+                            <p>Choose from 204,000 online video courses with new additions published every month</p>
+                            <p>Expand your career opportunities with Python
+                                Take one of Udemy’s range of Python courses and learn how to code using this incredibly useful language. Its simple syntax and readability makes Python perfect for Flask, Django, data science, and machine learning. You’ll learn how to build everything from games to sites to apps. Choose from a range of courses that will appeal to</p>
+                        </div>
+                     </div>
+                <div class="col-sm-4">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMggld4JQC5NgXRnlyfA1-rdQhcjkH7SrRiA&usqp=CAU" width="500px" alt="unavailable">
+                </div>
+                </div>
+                </div>
+            </div>
+        </div>
+        
+            <div class=" row row-cols-1 row-cols-md-2 row-cols-lg-3 border-borderless">
+            <div class="card p-2 cardone mt-5 bg-danger bg-opacity-50">
+                <img src="https://s.udemycdn.com/home/top-categories/lohp-category-design-2x-v2.jpg" class="width-100px" alt="unavailable">
+                <div class="card-body ">
+                    <h6 class="text-dark text-center mt-1 display-4">Design</h6>
+                   
+                </div>
+            </div>
+            <div class="card p-2 bg-danger bg-opacity-50 cardone mt-5 ">
+                <img src="https://s.udemycdn.com/home/top-categories/lohp-category-development-2x-v2.jpg"  class="width-100px"alt="unavailable">
+                <div class="card-body ">
+                    <h6 class="text-dark text-center mt-1 display-4">Development</h6>
+                    
+                </div>
+            </div>
+            <div class="card p-2  bg-danger bg-opacity-50 cardone mt-5">
+                <img src="https://s.udemycdn.com/home/top-categories/lohp-category-marketing-2x-v2.jpg"  class="width-100px"alt="unavailable">
+                <div class="card-body ">
+                    <h6 class="text-dark text-center mt-1 display-4">Marketing</h6> 
+            </div>
+           </div>
+           <div class="card p-2 bg-danger cardone bg-opacity-50 mt-5">
+            <img src="https://s.udemycdn.com/home/top-categories/lohp-category-it-and-software-2x-v2.jpg"  class="width-100px"alt="unavailable">
+            <div class="card-body ">
+                <h6 class="text-dark text-center mt-1 display-4">It and Software</h6> 
+        </div>
+       </div>
+       <div class="card p-2 bg-danger cardone bg-opacity-50 mt-5">
+        <img src="https://s.udemycdn.com/home/top-categories/lohp-category-personal-development-2x-v2.jpg"  class="width-100px"alt="unavailable">
+        <div class="card-body ">
+            <h6 class="text-dark text-center mt-1 display-4">Personal Development</h6> 
+    </div>
+   </div>
+   <div class="card p-2 bg-danger cardone bg-opacity-50  mt-5">
+    <img src="https://s.udemycdn.com/home/top-categories/lohp-category-business-2x-v2.jpg"  class="width-100px"alt="unavailable">
+    <div class="card-body ">
+        <h6 class="text-dark text-center mt-1 display-4">Business</h6> 
+</div>
+</div>
+         </div>  
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+</body>
+</html>
